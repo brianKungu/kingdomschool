@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kingdom High School | Admissions</title>
+	<script>
+		function validate(){
+			var parentsName=document.myform.user.value;
+			var phoneNumber=document.myform.number.value;
+			var studentsName=document.myform.student.value;
+			var studentsGrade=document.myform.grade.value;
+			
+			var homeAddress=document.myform.address.value;
+				if(parentsName==""){
+				 alert("Please input name!");
+				 return false;
+				}
+				if(phoneNumber.length<10){
+				alert("Phone number should be atleast ten digits");
+				return false;
+				}
+				if(studentsName==""){
+				alert("Please input student's name!");
+				return false;
+				}
+				
+				
+                if(studentsGrade==""){
+                alert("Student's grade is a requirement.");
+					return false;
+                }
+				if(homeAddress==""){
+				alert("Home address must be filled!");
+				return false;
+				}
+		}
+	
+	
+	</script>
+	<style>
+	body,select{
+		overflow:auto;
+		}
+		input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+		input[type=submit] {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+fieldset,select{
+  width: 85%;
+  
+  
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+}
+legend,select{
+
+
+  box-sizing: border-box;
+}
+	
+	
+	</style>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="section">
+      <div><a href="index.html"><img src="images/Logopit_1548269226227.jpg" height="95" width="762" alt="KINGDOM HIGH SCHOOL" /></a></div>
+      <span>KingdomHigh@excel.com<br />
+      <br />
+      + 254724055264</span> </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	   <li><a href="login.php">Admin</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="current"><a href="admissions.html">Admissions</a></li>
+	  <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="school-calendar.html">School Calendar</a></li>
+      <li><a href="contact-us.html">Contact us</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div>
+      <h3>Admissions</h3>
+	    <img src="images/images_5.png"/>
+      <p>Kingdom High invites applications from qualified KCPE candidates.Admission is in kine with an Education ministry directive for selected national schools within the city to open day-wing classess at their institutions.<br>
+		Those trying to apply for the available 50 empty slots should make sure the reside within the city else it would be against the government's directive. Kingdom high is among 19 select schools that have been identified by the ministry to offer day-wing classes.
+		Minimum Grade requirements should be a B-
+	  
+	  </p>
+      <p>For more information visit our offices at Makadara.</p>
+      <div class="section">
+		<form name="myform" action="admission.php" method="POST" onsubmit="return validate()">
+			<fieldset>
+			<legend><h2>Admission Form</h2></legend>
+				<b>Parents Name:<b><br><input type="text" id="parentsName" name="parentsName" placeholder="Eg.Brian"/><br>
+						<br>
+				<b>Phone number:</b><br><input type="text" id="phone" name="phone" placeholder="Eg.0724..."/><br>
+						<br>
+				<b>Students Name:</b><br><input type="text" id="studentsName" name="studentsName" placeholder="Eg.Andrew"/><br>
+						<br>
+				<b>Students Grade:</b>	<br><input type="text" id="studentsGrade" name="studentsGrade" placeholder="Eg.B"/><br>
+						<br>
+							
+				<b>Former school:</b><br><input type="text" id="formerschool" name="formerschool" placeholder="Nairobi School"/><br>
+						<br>			
+						
+				<b>Home Address:</b><br><input type="text" id="homeaddress" name="homeaddress"><br>
+						<br>		
+						<input type="submit" name="submit" value="submit"/>
+			</fieldset>
+		</form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div>
+      <div id="connect"> <a href="#"><img src="images/icon-facebook.gif" alt="" /></a> <a href="#"><img src="images/icon-twitter.gif" alt="" /></a> <a href="#"><img src="images/icon-youtube.gif" alt="" /></a> </div>
+      <div class="section">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="login.php">Admin</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+		  <li><a href="blog.html">Blog</a></li>
+          <li class="last"><a href="contact-us.html">Contact us</a></li>
+        </ul>
+        <p>Copyright &copy; <a href="admissions.html">Domain Name</a> - All Rights Reserved |</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

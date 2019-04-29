@@ -1,0 +1,1 @@
+$result = mysqli_query($con, "SELECT * FROM admission") or die("Error: " . mysqli_error($con));	

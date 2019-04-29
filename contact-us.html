@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kingdom High School | Contact Us</title>
+		<script>
+				function validate(){
+				var name=document.fourm.user.value;
+				var phoneNumber=document.fourm.number.value;
+				var message=document.fourm.message.value;
+				if(name==""){
+				alert("User's name is required!");
+				return false;
+				}
+				if(phoneNumber.length<10){
+				alert("Enter a valid number!");
+				return false;
+				}
+				if(message==""){
+				alert("We require you to key in your issue in the message-box below.");
+				return false;
+				}
+				}
+		
+		
+		
+		</script>
+		<style>
+		body,select{
+		overflow:auto;
+		}
+		input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+		input[type=submit] {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+fieldset,select{
+  width: 85%;
+  margin:0 auto;
+  
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+}
+legend,select{
+
+margin:0 auto;
+  box-sizing: border-box;
+}
+		</style>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="section">
+      <div><a href="index.html"><img src="images/Logopit_1548269226227.jpg" height="95" width="750" alt="KINGDOM HIGH SCHOOL" /></a></div>
+      <span>KingdomHIgh@excel.com <br />
+      <br />
+      +254724055264</span> </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="login.php">Admin</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+	  <li><a href="career.html">Curriculum</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="school-calendar.html">School Calendar</a></li>
+      <li class="current"><a href="contact-us.html">Contact us</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div>
+      <h3>Contact Us</h3>
+	  <h5>You can access our services through the following information.</h5>
+      <p><b>Address:</b> P.O. BOX 5214-25462 Nairobi, Makadara.</p>
+      <p><b>Tel:</b> +254724055264</p>
+      <p><b>Fax:</b>+254789999330</p>
+      <p>Email: KingdomHIgh@excel.com</p>
+      <p><strong>For more information or any issue kindly spare your time to fill in the details below.</strong></p>
+	  <p> To access our bank account for the purpose of schoolfees payments kindly call +254724055264 for clarification on how to make your parments.</p>
+		<div class="container">	
+			<fieldset>
+				<legend><h2>Contact US</h2></legend>
+					<form name="fourm" method="POST" action="contact.php" onsubmit="return validate()" >
+						<b>Name:</b><br><input type="text" id="user" name="name" placeholder="Eg.Brian"/><br>
+						<br>
+						<b>Phone number:</b><br><input type="text" id="number" name="phone" placeholder="Eg.0724..." required/><br>
+						<br>
+						<b>Message:</b><br><textarea rows="4" cols="50" autofocus id="contactMessage" name="message"></textarea><br>
+						<br>
+						<input type="submit" name="submit" value="submit"/>
+					</form>
+			
+			
+			
+			</fieldset>
+		</div>
+    </div>
+  </div>
+  <div id="footer">
+    <div>
+      <div id="connect"> <a href="#"><img src="images/icon-facebook.gif" alt="" /></a> <a href="#"><img src="images/icon-twitter.gif" alt="" /></a> <a href="#"><img src="images/icon-youtube.gif" alt="" /></a> </div>
+      <div class="section">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+		  <li><a href="admissions.html">Admissions</a></li>
+		  <li><a href="career.html">Curriculum</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="last"><a href="contact-us.html">Contact us</a></li>
+        </ul>
+        <p>Copyright &copy; <a href="contact-us.html">Domain Name</a> - All Rights Reserved |</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
